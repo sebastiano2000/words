@@ -26,7 +26,7 @@ const AddEmployee = () => {
     }
 
   return (
-    <div className="d-flex flex-column my-4 mx-5">
+    <div className="d-flex flex-column my-4 mx-5 p-4">
         <form onSubmit={handleSubmit}>
             <label>
                 First Name:
