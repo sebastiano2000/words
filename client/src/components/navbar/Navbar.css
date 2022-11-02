@@ -1,0 +1,22 @@
+.mainNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0px 2px 6px grey;
+    position: sticky;
+    background-color: #fff;
+}
+
+.mainHeader {
+    color: #4d6cfb;
+}
+
+.mainText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}

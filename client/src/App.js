@@ -1,25 +1,38 @@
-import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import React, {useEffect,useContext} from "react";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/home/Home";
+import "./App.css";
+import Questions from "./pages/questions/Questions";
+import {Route,Routes} from 'react-router-dom';
+import Words from "./components/words/Words";
+import ProgressBar from "./components/progress/ProgressBar";
+import { GlobalContext } from "./context/GlobalContext";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+function App() {
+  /**
+   * getWords method in global context connect with back to get questions array
+   */
+  const {getWords} = useContext(GlobalContext);
 
-import HomePage from './pages/HomePage';
-import EmployeesPage from './pages/EmployeesPage';
-import AddEmployee from './pages/AddEmployee';
-
-const App = () => {
+  useEffect(() => {
+    getWords();
+  }, []);
+  
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Navbar />
+      <div className="mainContainer">
         <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/home" element={<HomePage />} />
-            <Route path="/employees" element={<EmployeesPage rowsPerPage={4}/>} />
-            <Route path="/addEmployee" element={<AddEmployee />} />
+          <Route path='/' element={<Home />}/>
+          <Route path='/questions' element={<Questions/>}>
+            <Route path='newquestions' element={<Words />}/>
+            <Route path='result' element={<ProgressBar />}/>
+          </Route>
         </Routes>
       </div>
-    </Router>
+      <Footer />
+    </div>
   );
 }
 

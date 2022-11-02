@@ -1,0 +1,44 @@
+.resultContainer {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 100%;    
+}
+
+.resultCard {     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    color: #4d6cfb;
+}
+
+.resultCard > button {
+    padding: 7px;
+    font-size: 16px;
+    border: 1px solid #4d6cfb;
+    border-radius: 6px;
+    width: 135px;
+    color: #fff;
+    background-color: #4d6cfb;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.resultCard > button:hover {
+    box-shadow: 1.5px 1.5px 3px gray;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.Answers > table {
+    border-collapse: collapse;
+    width: 100%;
+}

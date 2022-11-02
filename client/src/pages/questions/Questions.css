@@ -1,0 +1,51 @@
+.questionsPage {
+  width: 80%;
+}
+
+.questionsPageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+progress::-moz-progress-bar {
+    color: #4dfbb5;
+    background: #4dfb#4dfbb5
+}
+  
+progress::-webkit-progress-value {
+    color: #4dfbb5;
+    background: #4dfbb5;
+}
+  
+progress {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #4dfbb5;
+    background: #4dfbb5;
+}
+
+.questionsPageFooter {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.questionsPageFooter > button {
+    padding: 5px;
+    margin: 4px;
+    border: 1px solid #4d6cfb;
+    color: #4d6cfb;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 80px;
+    font-size: 16px;
+}
+
+.questionsPageFooter > button:hover {
+    color: #fff;
+    background-color: #4d6cfb;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px gray;
+}

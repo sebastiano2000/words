@@ -1,0 +1,12 @@
+.App{
+    height: 100%;
+    width: 100%;
+    background-color: #f6f7fb;
+}
+
+.mainContainer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

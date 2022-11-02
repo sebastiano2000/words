@@ -1,0 +1,32 @@
+.homePage {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardFooter > button {
+    padding: 6px;
+    margin: 6px;
+    border: none;
+    background-color: #4d6cfb;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cardFooter >  button:hover{
+    box-shadow: 1px 1px 2px gray;
+}
